@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ======================================================
+       REEMPLAZAR: título SEO del artículo
+       Formato: [Keyword principal]: [complemento] | DineroDigital
+  ======================================================= -->
+  <title><!-- SEO TITLE --> | DineroDigital</title>
+  <meta name="description" content="<!-- META DESCRIPTION (máx 160 caracteres) -->">
+
+  <!-- ======================================================
+       REEMPLAZAR: slug del artículo (ej. ganar-dinero-con-chatgpt)
+  ======================================================= -->
+  <link rel="canonical" href="https://dinerodigital.com/<!-- SLUG -->/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://dinerodigital.com/<!-- SLUG -->/">
+  <meta property="og:title" content="<!-- SEO TITLE -->">
+  <meta property="og:description" content="<!-- META DESCRIPTION -->">
+  <meta property="og:site_name" content="DineroDigital">
+  <!-- Descomentar cuando exista imagen OG del artículo: -->
+  <!-- <meta property="og:image" content="https://dinerodigital.com/assets/images/<!-- SLUG -->-og.jpg"> -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<!-- SEO TITLE -->">
+  <meta name="twitter:description" content="<!-- META DESCRIPTION -->">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS (ruta relativa desde subcarpeta del artículo) -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- ======================================================
+       FAQ Schema JSON-LD
+       Reemplazar cada pregunta y respuesta con las del artículo.
+       Mantener el formato exacto para Rich Results de Google.
+  ======================================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "<!-- PREGUNTA FAQ 1 -->",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<!-- RESPUESTA FAQ 1 -->"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "<!-- PREGUNTA FAQ 2 -->",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<!-- RESPUESTA FAQ 2 -->"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "<!-- PREGUNTA FAQ 3 -->",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<!-- RESPUESTA FAQ 3 -->"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Article Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "<!-- H1 DEL ARTÍCULO -->",
+    "description": "<!-- META DESCRIPTION -->",
+    "url": "https://dinerodigital.com/<!-- SLUG -->/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "DineroDigital",
+      "url": "https://dinerodigital.com"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Accesibilidad: saltar al contenido principal -->
+  <a href="#main-content" class="skip-link">Saltar al contenido</a>
+
+  <!-- ========================
+       HEADER / NAV
+       Idéntico a la home. No modificar estructura ni clases.
+  ========================= -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="site-logo" aria-label="DineroDigital – Inicio">
+          <span class="logo-text">Dinero<span class="logo-accent">Digital</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Navegación principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú de navegación">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="main-menu" class="nav-menu" role="list">
+            <li><a href="/inteligencia-artificial/">Inteligencia Artificial</a></li>
+            <li><a href="/negocios-digitales/">Negocios Digitales</a></li>
+            <li><a href="/redes-sociales/">Redes Sociales</a></li>
+            <li><a href="/freelancing/">Freelancing</a></li>
+            <li><a href="/finanzas-digitales/">Finanzas Digitales</a></li>
+            <li><a href="/empezar/" class="nav-cta">Empieza aquí</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ========================
+         BREADCRUMB
+         SEO: BreadcrumbList Schema (microdata inline).
+         REEMPLAZAR: slug-categoria, Nombre Categoría y título corto.
+    ========================= -->
+    <nav class="breadcrumb" aria-label="Miga de pan">
+      <div class="container">
+        <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+          <li class="breadcrumb-item"
+              itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="/" itemprop="item"><span itemprop="name">Inicio</span></a>
+            <meta itemprop="position" content="1">
+          </li>
+
+          <!-- REEMPLAZAR: slug-categoria (ej. redes-sociales) y Nombre Categoría -->
+          <li class="breadcrumb-item"
+              itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="/<!-- SLUG-CATEGORÍA -->/" itemprop="item">
+              <span itemprop="name"><!-- NOMBRE CATEGORÍA --></span>
+            </a>
+            <meta itemprop="position" content="2">
+          </li>
+
+          <!-- REEMPLAZAR: título corto del artículo (ej. "Ganar dinero en Instagram") -->
+          <li class="breadcrumb-item" aria-current="page"
+              itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name"><!-- TÍTULO CORTO ARTÍCULO --></span>
+            <meta itemprop="position" content="3">
+          </li>
+
+        </ol>
+      </div>
+    </nav>
+
+    <!-- ========================
+         ARTÍCULO
+    ========================= -->
+    <div class="article-wrap container">
+      <article>
+
+        <!-- ========================
+             CABECERA DEL ARTÍCULO
+             No modificar el H1 (SEO crítico).
+        ========================= -->
+        <header class="article-header">
+
+          <!-- REEMPLAZAR: slug-categoria y Nombre Categoría -->
+          <a href="/<!-- SLUG-CATEGORÍA -->/" class="category-badge"><!-- NOMBRE CATEGORÍA --></a>
+
+          <!-- H1: no modificar. Copiar exactamente del campo h1 del JSON SEO. -->
+          <h1><!-- H1 DEL ARTÍCULO --></h1>
+
+          <!-- REEMPLAZAR: primer párrafo del artículo (extracto/lead) -->
+          <p class="article-excerpt"><!-- EXTRACTO / LEAD —  primer párrafo del artículo --></p>
+
+          <div class="article-meta">
+            <span>DineroDigital</span>
+            <span class="article-meta-sep" aria-hidden="true">·</span>
+            <!-- REEMPLAZAR: mes y año de publicación -->
+            <span><!-- ej. Enero 2026 --></span>
+            <span class="article-meta-sep" aria-hidden="true">·</span>
+            <!-- REEMPLAZAR: tiempo de lectura estimado -->
+            <span><!-- ej. 8 min de lectura --></span>
+          </div>
+
+        </header>
+
+        <!-- AD: Banner entre cabecera y cuerpo del artículo -->
+        <!-- <div class="ad-slot ad-slot--banner">
+          <ins class="adsbygoogle" style="display:block"
+               data-ad-client="ca-pub-XXXXXXXX"
+               data-ad-slot="XXXXXXXX"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+        </div> -->
+
+        <!-- ========================
+             CUERPO DEL ARTÍCULO
+             Cada H2 del agente SEO se convierte en una <section>.
+             Añadir o quitar secciones según el artículo.
+             No eliminar keywords de los encabezados.
+        ========================= -->
+        <div class="article-body">
+
+          <!-- SECCIÓN 1 — Introducción / primer H2 -->
+          <section aria-labelledby="s1-h2">
+            <h2 id="s1-h2"><!-- H2 SECCIÓN 1 --></h2>
+            <p><!-- Texto sección 1 --></p>
+            <!-- Añadir <ul>, <ol>, <h3> según el contenido del MD -->
+          </section>
+
+          <!-- AD: Rectángulo entre secciones (posición óptima AdSense) -->
+          <!-- <div class="ad-slot ad-slot--mid">
+            <ins class="adsbygoogle" style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXX"
+                 data-ad-slot="XXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          </div> -->
+
+          <!-- SECCIÓN 2 -->
+          <section aria-labelledby="s2-h2">
+            <h2 id="s2-h2"><!-- H2 SECCIÓN 2 --></h2>
+            <p><!-- Texto sección 2 --></p>
+          </section>
+
+          <!-- SECCIÓN 3 -->
+          <section aria-labelledby="s3-h2">
+            <h2 id="s3-h2"><!-- H2 SECCIÓN 3 --></h2>
+            <p><!-- Texto sección 3 --></p>
+          </section>
+
+          <!-- SECCIÓN 4 -->
+          <section aria-labelledby="s4-h2">
+            <h2 id="s4-h2"><!-- H2 SECCIÓN 4 --></h2>
+            <p><!-- Texto sección 4 --></p>
+          </section>
+
+          <!-- SECCIÓN 5 -->
+          <section aria-labelledby="s5-h2">
+            <h2 id="s5-h2"><!-- H2 SECCIÓN 5 --></h2>
+            <p><!-- Texto sección 5 --></p>
+          </section>
+
+          <!-- SECCIÓN 6 -->
+          <section aria-labelledby="s6-h2">
+            <h2 id="s6-h2"><!-- H2 SECCIÓN 6 --></h2>
+            <p><!-- Texto sección 6 --></p>
+          </section>
+
+          <!-- AD: Banner antes del FAQ -->
+          <!-- <div class="ad-slot ad-slot--banner">
+            <ins class="adsbygoogle" style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXX"
+                 data-ad-slot="XXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+          </div> -->
+
+        </div><!-- /article-body -->
+
+        <!-- ========================
+             FAQ ACCORDION
+             Usar el mismo HTML que la home — el JS de main.js
+             ya gestiona .faq-question / .faq-answer automáticamente.
+             REEMPLAZAR: preguntas y respuestas del MD del artículo.
+             Añadir tantos faq-item como preguntas tenga el artículo.
+        ========================= -->
+        <section class="article-faq" aria-labelledby="faq-h2-art">
+          <h2 id="faq-h2-art">Preguntas frecuentes sobre <!-- TEMA DEL ARTÍCULO --></h2>
+
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <!-- PREGUNTA 1 -->
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p><!-- RESPUESTA 1 --></p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <!-- PREGUNTA 2 -->
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p><!-- RESPUESTA 2 --></p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <!-- PREGUNTA 3 -->
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p><!-- RESPUESTA 3 --></p>
+              </div>
+            </div>
+
+            <!-- Copiar bloque faq-item para cada pregunta adicional -->
+
+          </div>
+        </section>
+
+        <!-- ========================
+             CTA FINAL DEL ARTÍCULO
+             REEMPLAZAR: texto CTA, slug del artículo relacionado
+             y anchor text (usar el que indica el agente SEO).
+             No inventar CTAs — usar los definidos en el MD.
+        ========================= -->
+        <aside class="article-cta-box" aria-label="Siguiente paso recomendado">
+          <p><!-- TEXTO CTA — ej. "Lee también cómo ganar dinero con Canva y crear tus primeras plantillas" --></p>
+          <a href="/<!-- SLUG-ARTÍCULO-RELACIONADO -->/" class="btn btn-primary">
+            <!-- ANCHOR TEXT CTA — ej. "Ganar dinero con Canva" -->
+          </a>
+        </aside>
+
+      </article>
+    </div><!-- /article-wrap -->
+
+  </main>
+
+  <!-- ========================
+       FOOTER
+       Idéntico a la home. No modificar.
+  ========================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="/" class="site-logo" aria-label="DineroDigital – Inicio">
+            <span class="logo-text">Dinero<span class="logo-accent">Digital</span></span>
+          </a>
+          <p>Guías prácticas y reales para ganar dinero online. Sin promesas vacías, solo métodos que funcionan.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Categorías del blog">
+          <h3>Categorías</h3>
+          <ul>
+            <li><a href="/inteligencia-artificial/">Inteligencia Artificial</a></li>
+            <li><a href="/negocios-digitales/">Negocios Digitales</a></li>
+            <li><a href="/redes-sociales/">Redes Sociales</a></li>
+            <li><a href="/freelancing/">Freelancing</a></li>
+            <li><a href="/finanzas-digitales/">Finanzas Digitales</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Contenido del blog">
+          <h3>Contenido</h3>
+          <ul>
+            <li><a href="/guia-principiantes/">Guía para principiantes</a></li>
+            <li><a href="/guias/">Todas las guías</a></li>
+            <li><a href="/preguntas-frecuentes/">Preguntas frecuentes</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Información del sitio">
+          <h3>DineroDigital</h3>
+          <ul>
+            <li><a href="/sobre-nosotros/">conoce DineroDigital</a></li>
+            <li><a href="/aviso-legal/">Aviso legal</a></li>
+            <li><a href="/politica-privacidad/">Política de privacidad</a></li>
+            <li><a href="/politica-cookies/">Política de cookies</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 DineroDigital. Todos los derechos reservados.</p>
+        <p class="footer-disclaimer">Este sitio puede contener publicidad y enlaces de afiliados. <a href="/aviso-legal/">Más información</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS (ruta relativa desde subcarpeta del artículo) -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
